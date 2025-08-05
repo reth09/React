@@ -38,21 +38,21 @@ function App() {
 
   return (
     <>
-      <div className='w-full max-w-md mx-auto shadow-md rounded-xl p-4 fixed inset-y-1/2 inset-x-0 h-fit text-white bg-slate-700' style={{ transform: 'translateY(-50%)' }}>
-        <h2 className='text-2xl text-center pb-3 font-sans font-thin tracking-wide'>PASSWORD GENERATOR</h2>
+      <div className='w-full max-w-md mx-auto shadow-md rounded-xl p-4 fixed inset-y-1/2 inset-x-0 h-fit text-white bg-cyan-950 border border-cyan-400' style={{ transform: 'translateY(-50%)' }}>
+        <h2 className='text-2xl text-center pb-3 font-sans font-thin tracking-wide text-cyan-400'>PASSWORD GENERATOR</h2>
         <div className='flex shadow rounded-full overflow-hidden mb-4'>
           <input
             type='text'
             value={pass}
-            className='outline-none w-full py-2 px-3 text-black text-lg'
+            className='outline-none w-full bg-cyan-800 py-2 px-3 text-cyan-400 text-lg'
             placeholder='PASSWORD'
             readOnly
             ref={passRef}
           />
-          <button className='bg-blue-500 px-3' onClick={copyPass}>COPY</button>
+          <button className='bg-cyan-400 text-cyan-900 px-3' onClick={copyPass}>COPY</button>
         </div>
 
-        <div className="flex text-md justify gap-x-5 align-middle">
+        <div className="flex text-md justify gap-x-5 align-middle text-cyan-400">
           <div className="flex items-center gap-x-2">
             <input
               type="range"
